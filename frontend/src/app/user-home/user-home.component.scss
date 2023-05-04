@@ -1,0 +1,51 @@
+nb-layout-header {
+  .header-buttons-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+
+    .start-buttons{
+      display: flex;
+
+    }
+    .end-buttons{
+      display: flex;
+      justify-content: flex-end;
+
+    }
+  }
+}
+nb-layout-column{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+    .mail-scheduler {
+    nb-card {
+      width: 400px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      input {
+        margin-bottom: 20px;
+        width: 100%;
+      }
+
+      button {
+        margin-top: 20px;
+        width: 100%;
+      }
+
+      a {
+        margin-top: 20px;
+        text-align: center;
+      }
+    }
+  }
+}
+

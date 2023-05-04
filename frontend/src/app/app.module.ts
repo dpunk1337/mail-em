@@ -11,6 +11,10 @@ import { UserHomeComponent } from './user-home/user-home.component';
 import { AdminHomeComponent } from './admin-home/admin-home.component';
 import { LoginComponent } from '@app/auth/login.component';
 import { SignupComponent } from '@app/auth/signup.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NbThemeModule, NbLayoutModule, NbInputModule, NbButtonModule, NbCardModule, } from '@nebular/theme';
+import { NbEvaIconsModule } from '@nebular/eva-icons';
+import { NbPasswordAuthStrategy, NbAuthModule } from '@nebular/auth';
 
 @NgModule({
   declarations: [
@@ -24,7 +28,14 @@ import { SignupComponent } from '@app/auth/signup.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    NbThemeModule.forRoot({ name: 'cosmic' }),
+    NbLayoutModule,
+    NbEvaIconsModule,
+    NbInputModule,
+    NbButtonModule,
+    NbCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

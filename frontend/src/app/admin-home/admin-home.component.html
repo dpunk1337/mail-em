@@ -1,18 +1,41 @@
-<p>admin-home works!</p>
-<div id="logOut" (click)="logOut()">Log out</div>
-<div id="analytics">
-<table>
-  <tr>
-    <th>Scheduled</th>
-    <td>{{ mailAnalytics.scheduled }}</td>
-  </tr>
-  <tr>
-    <th>Sent</th>
-    <td>{{ mailAnalytics.sent }}</td>
-  </tr>
-  <tr>
-    <th>Opened</th>
-    <td>{{ mailAnalytics.opened }}</td>
-  </tr>
-</table>
-</div>
+<nb-layout>
+  <nb-layout-header>
+    <div class="header-buttons-container">
+      <div class="start-buttons">
+
+      </div>
+      <div class="end-buttons">
+        <button nbButton id="logOut" (click)="logOut()">Log out</button>
+      </div>
+    </div>
+  </nb-layout-header>
+  <nb-layout-column>
+    <div class="analytics-container">
+      <nb-card>
+        <nb-card-header>Mail Analytics</nb-card-header>
+        <nb-card-body>
+          <div class="analytics-grid">
+            <div class="analytics-item">
+              <div class="analytics-item-header">
+                <span class="analytics-item-title">Scheduled</span>
+                <span class="analytics-item-value">{{ mailAnalytics.scheduled }}</span>
+              </div>
+            </div>
+            <div class="analytics-item">
+              <div class="analytics-item-header">
+                <span class="analytics-item-title">Sent</span>
+                <span class="analytics-item-value">{{ mailAnalytics.sent }}</span>
+              </div>
+            </div>
+            <div class="analytics-item">
+              <div class="analytics-item-header">
+                <span class="analytics-item-title">Opened</span>
+                <span class="analytics-item-value">{{ mailAnalytics.opened }}</span>
+              </div>
+            </div>
+          </div>
+        </nb-card-body>
+      </nb-card>
+    </div>
+  </nb-layout-column>
+</nb-layout>

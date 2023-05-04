@@ -1,7 +1,17 @@
-<form id="loginForm" (ngSubmit)="onSubmit()">
-  <div id="loginText">Login to continue...</div>
-  <input type="text" name="email" [(ngModel)]="email" placeholder="Email" required>
-  <input type="password" name="password" [(ngModel)]="password" placeholder="Password" required>
-  <button type="submit">Login</button>
-</form>
-<a href="/#/signup">Register yourself</a>
+<nb-layout>
+  <nb-layout-column>
+    <div class="login-container">
+      <nb-card>
+        <nb-card-header>Login to continue...</nb-card-header>
+        <nb-card-body>
+          <form id="loginForm" (ngSubmit)="onSubmit()">
+            <input type="text" name="email" [(ngModel)]="email" fullWidth  nbInput placeholder="Email" required>
+            <input type="password" name="password" [(ngModel)]="password" fullWidth  nbInput placeholder="Password" required>
+            <button type="submit" nbButton>Login</button>
+            <a href="/#/signup">Register yourself</a>
+          </form>
+        </nb-card-body>
+      </nb-card>
+    </div>
+  </nb-layout-column>
+</nb-layout>
