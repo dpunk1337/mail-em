@@ -1,0 +1,8 @@
+<p>user-home works!</p>
+<div id="logOut" (click)="logOut()">Log out</div>
+<form id="scheduleMail" (ngSubmit)="onScheduleMail()">
+  <input type="text" name="receiverId" [(ngModel)]="receiverId" placeholder="To">
+  <input type="text" name="subject" [(ngModel)]="subject" placeholder="subject">
+  <textarea rows="5" cols="30" name="message" [(ngModel)]="message"></textarea>
+  <button type="submit">Schedule</button>
+</form>
