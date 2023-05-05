@@ -53,7 +53,7 @@ The database used is SQLite, which is easy to set up and use.
     - Where?
       - In config.py root folder replace 
         - `MAIL_USERNAME = 'company.email.id'` with `MAIL_USERNAME = '<your-email-id>'`
-        - `MAIL_PASSWORD = 'company.email.password'` with `MAIL_PASSWORD = 'your-email-password'`
+        - `MAIL_PASSWORD = 'company.email.password'` with `MAIL_PASSWORD = '<your-email-password>'`
     - For gmail users
       - Gmail doesn't allow to use the credentials directly due to security concern
       - You will need to get and use the app password, below are the steps
